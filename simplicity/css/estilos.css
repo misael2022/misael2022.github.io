@@ -51,6 +51,10 @@ header {
     position: sticky;
     top: 0;
     border-radius: 3px;
+
+    /* Ajuste de profundidade (eixo z)
+    Quanto maior, mais a frente fica */
+    z-index: 1000;
 }
 
 /* Regra para um elemento (no caso, uma div) com a classe limitador E dentro do header.
@@ -98,12 +102,13 @@ nav h2 a:focus,
     color: black;
     font-weight: bold;
     height: 50px;
-    border-radius: 1rem;
+    border-radius: rem;
 
     /* Links são inline, não tem espaço para alinhamento pois só ocupam o espaço do conteúdo. Display flex transforma em block. */
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(255, 255, 255);
 }
 
 /* Só funciona se as duas classes estivem juntas, do contrário nada acontece. Seletor fechado.
