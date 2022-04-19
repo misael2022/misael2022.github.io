@@ -16,7 +16,7 @@
             <h1><a href="index.html">Simplicity</a></h1>
             <nav>
                 <!-- O comportamento desse link será feito via JavaScript -->
-                <h2><a href="" class="icone" >Menu &equiv; </a></h2>
+                <h2><a href="" class="icone">Menu &equiv; </a></h2>
 
                 <ul class="links-menu">
                     <li><a href="index.html">Home</a></li>
@@ -90,6 +90,9 @@
                     <p>Interesses:</p>
 
                     <!-- type:CHECKBOX permite múltiplas seleções -->
+
+
+
                     <input type="checkbox" name="interesses" id="desing">
                     <label for="desing">Design</label>
 
@@ -99,6 +102,34 @@
                     <input type="checkbox" name="interesses" id="programacao">
                     <label for="programacao">Programação</label>
                 </div>
+
+
+                <!-- INÍCIO HTML PARA CEP/ENDEREÇO -->
+                <div>
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" maxlength="9" required>
+                    <button id="localizar-cep">Localizar</button>
+                    <b id="status"></b>
+                </div>
+                <div>
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" size="30">
+                </div>
+                <div>
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" id="bairro" name="bairro">
+                </div>
+                <div>
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade">
+                </div>
+                <div>
+                    <label for="estado">Estado:</label>
+                    <input type="text" id="estado" name="estado">
+                </div>
+                <!-- /FIM HTML PARA CEP/ENDEREÇO -->
+
+
 
                 <div>
                     <label for="assunto">Assunto:</label>
@@ -137,7 +168,11 @@
         </p>
     </footer>
 
+    <script src="js/vanilla-masker.min.js"></script>
+
     <script src="js/menu.js"></script>
+
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
